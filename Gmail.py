@@ -17,7 +17,6 @@ def send_email(message):
         msg["Subject"] = "SUBJECT"
         server.sendmail(sender, author, msg.as_string())
 
-        # server.sendmail(sender, sender, f"Subject: CLICK ME PLEASE!\n{message}")
 
         return "The message was sent successfully!"
     except Exception as _ex:
